@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="main-navbar">
+        <div class="main-menu">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../images/logo2.png" width="100" height="60"  alt="logo2"></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about us/about.html">About Us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="../contact us/contact.html">Contact Us</a></li>             
+                </ul>
+            </div>
+            <section class="other">
+                <i class="fa-solid fa-cart-shopping" id="shopping-bag"></i>
+                <div class="shopping-cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="total-title">Total:</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <i class="fa-solid fa-x" id="close-cart"></i>
+                </div>                 
+            </section>                   
+        </div>
+    </div>
+
+    <div class="nav-shadow"></div>
+
+    <div class="content">
+        <div class="about">
+            <img src="../../images/product_pic.jpg" width="1400" class="kol">           
+            <p>PowerHouse is a leading provider of new and used commercial cardio gym equipment worldwide. The keystone of your exercise routines has to include cardiovascular training. Good cardio exercise equipment
+                can allow for a more efficient workout yielding better results in a smaller time frame. From complete gyms packages, corporate gyms, home gyms, personal training studios, physical therapy offices, 
+                chiropractic offices, crossfit facilities and more. We can help customized a package based on your budget and needs. 
+                We also sell individual strength and cardio pieces.</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="top-container">
+            <select id="pageSelect" onchange="navigate()">
+                <option value="" disabled selected>Select Categories</option>
+                <option value="product.html">Cardio Equipments</option>
+                <option value="str.html">Strength Equipments</option>
+                <option value="phys.html">Physical Theraphy</option>
+            </select>
+            <span><i class="bx bx-chevron-down" id="cart-icon"></i></span>
+        </div>
+    </section>
+
+    <section class="Shop" id="Shop">
+        <h1>Cardio Equipments</h1>
+        <div class="container">
+            <div class="box">
+                <img src="../../images/products/cardioEquips/b1.png" class="product-img">
+                <h4 class="product-title">Precor TRM Threadmill</h4>
+                <h5 class="product-price">$4500</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/b2.png" class="product-img">
+                <h4 class="product-title">Life Cycle 212</h4>
+                <h5 class="product-price">$5549</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/b3.png" class="product-img">
+                <h4 class="product-title">Life Cycle S12</h4>
+                <h5 class="product-price">$4999</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/b4.png" class="product-img">
+                <h4 class="product-title">Cybex X S519</h4>
+                <h5 class="product-price">$7849</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+        </div>  
+
+        <div class="container">
+            <div class="box">
+                <img src="../../images/products/cardioEquips/e1.png" class="product-img">
+                <h4 class="product-title">Cybex H 771A</h4>
+                <h5 class="product-price">$7849</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/e2.png" class="product-img">
+                <h4 class="product-title">Cybex Arc</h4>
+                <h5 class="product-price">$5899</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/e3.png" class="product-img">
+                <h4 class="product-title">Cybex 772At</h4>
+                <h5 class="product-price">$8999</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/e4.png" class="product-img">
+                <h4 class="product-title">Life Cycle SE12</h4>
+                <h5 class="product-price">$6399</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <img src="../../images/products/cardioEquips/p1.png" class="product-img">
+                <h4 class="product-title">Cybex Arc Trainer</h4>
+                <h5 class="product-price">$8299</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/p2.png" class="product-img">
+                <h4 class="product-title">Cybex 773P</h4>
+                <h5 class="product-price">$6000</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/p3.png" class="product-img">
+                <h4 class="product-title">Life Cycle 113</h4>
+                <h5 class="product-price">$5999</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="../../images/products/cardioEquips/p4.png" class="product-img">
+                <h4 class="product-title">Life Cycle Trainer</h4>
+                <h5 class="product-price">$9100</h5>
+                <button id="add-to-cart-button" class="place">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner">
+        <h4>Shipping Services</h4>
+        <h2>Up to <span>50% off</span> - All Equipments</h2>
+        <button>Explore More</button>
+    </section>
+
+   <section id="comment">
+       <h2><span>Commercial & Home Gym Equipment For Sale</span></h2>
+        
+        <div class="key">
+            <p>If you are looking for the best deals possible on new and used gym equipment for sale. Then you have come to the right place. We have a large
+                 variety of cardio machines such as treadmills, steppers, group cycles, or exercise bikes, you have come to the right place.
+                  First, start by browsing thousands of used fitness equipment machines from cardio to free weight, selectorized and plate loaded strength
+                   equipment.</p>
+        </div>
+   </section>
+
+   <footer>
+    <div class="row">
+        <div class="col">
+            <h3>Office</h3>
+            <p>855 6TH AVE.,</p>
+            <p>QZUP Road</p>
+            <p>NEW YORK, NY 10001 UNITED STATES</p>
+            <p class="email-id">Powerhouse@temporary-gmail.com</p>
+            <h4>1-800-344-6453</h4>
+        </div>
+        <div class="col">
+            <h3>Customer Information</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Orders and Returns</li>
+                <li>Sitemap</li>
+                <li>Trade and Sell</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../pages/about us/about.html">About Us</a></li>
+                <li><a href="../../pages/product/product.html">Product</a></li>
+                <li><a href="../../pages/contact us/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter Subscribe</h3>
+            <form>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+        function navigate() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedPage = selectElement.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            } 
+        }
+
+        document.querySelector('.btn-buy').addEventListener('click', function() {
+        let total = parseFloat(document.querySelector('.total-price').innerText.replace('$', ''));
+        let buyerName = prompt("Enter your name:");
+        let amountPaid = parseFloat(prompt("Enter the amount paid:"));
+
+        if (amountPaid >= total) {
+            let change = amountPaid - total;
+            alert(`Thank you for your purchase, ${buyerName}! Your change is $${change.toFixed(2)}`);
+           
+        } else {
+            alert(`Sorry, the amount paid is insufficient. You need $${(total - amountPaid).toFixed(2)} more.`);
+        }
+    });
+    </script>
+
+    <script src="function.js"></script>
+</body>
+</html>
